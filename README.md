@@ -17,3 +17,24 @@ git checkout -b test
 git checkout dev
 git branch -d test
 ```
+
+### Exercise 2
+
+```bash
+    git checkout dev
+    touch home.html
+    git add home.html
+    git stash
+    touch about.html
+    git add about.html
+    git stash
+    touch team.html
+    git add team.html
+    git stash
+    git stash pop
+    git stash pop 'stash{0}'
+    git add --all
+    git commit -m "Adding the about and home pages"
+    git stash pop
+    git reset --hard
+```
